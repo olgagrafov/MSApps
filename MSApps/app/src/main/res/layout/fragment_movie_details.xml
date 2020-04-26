@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MovieDetailsFragment">
+
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_margin="3dp"
+        android:background="#E5E4E4"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:padding="4dp"
+                    android:layout_weight="1"
+                    android:text="TITLE:"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:padding="4dp"
+                    android:layout_weight="1"
+                    android:id="@+id/txtTitle"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:padding="4dp"
+                    android:layout_weight="1"
+                    android:text="RATING:"/>
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1">
+                    <RatingBar
+                        android:id="@+id/ratingMovie"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:progressTint="@color/colorPrimaryDark"
+                        android:progressBackgroundTint="@color/colorPrimaryDark"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:padding="4dp"
+                    android:layout_weight="1"
+                    android:text="RELEASE YEAR:"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:padding="4dp"
+                    android:layout_weight="1"
+                    android:id="@+id/txtReleaseYear"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:padding="4dp"
+                    android:layout_weight="1"
+                    android:text="GENRE:"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:padding="4dp"
+                    android:layout_weight="1"
+                    android:id="@+id/txtGenre"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/imgMovie"/>
+
+    </LinearLayout>
+
+</FrameLayout>
